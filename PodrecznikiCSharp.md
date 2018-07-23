@@ -15,12 +15,11 @@
 	a. [C# 7.0 in a Nutshell: The Definitive Reference, O'Reilly Media 2017](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650/ref=pd_sim_14_2?_encoding=UTF8&pd_rd_i=1491987650&pd_rd_r=P5SPFKN8QTGT1MB8PS0E&pd_rd_w=YZCYm&pd_rd_wg=lT5uU&psc=1&refRID=P5SPFKN8QTGT1MB8PS0E)
     
 	* [C# 7.0 Pocket Reference: Instant Help for C# 7.0 Programmers, O'Reilly Media 2017](https://www.amazon.com/7-0-Pocket-Reference-Instant-Programmers/dp/1491988533/ref=pd_sim_14_1?_encoding=UTF8&pd_rd_i=1491988533&pd_rd_r=QMA6PN65DWQXJZ27YABZ&pd_rd_w=tOWrl&pd_rd_wg=RHC0M&psc=1&refRID=QMA6PN65DWQXJZ27YABZ)
-    > Wersja uproszczona _C# 7.0 in a Nutshell_
+    		> Wersja uproszczona _C# 7.0 in a Nutshell_
         
 	b. [C# 7.0 w pigułce. Wydanie VII, Helion 2018](https://helion.pl/ksiazki/c-7-0-w-pigulce-wydanie-vii-joseph-albahari-ben-albahari,c7pig7.htm#format/d)
-	* [C# 7.0. Leksykon kieszonkowy](https://helion.pl/ksiazki/c-7-0-leksykon-kieszonkowy-joseph-albahari-ben-albahari,ch7lek.htm#format/d)
-        
-	> Wersja uproszczona  
+	* [C# 7.0. Leksykon kieszonkowy](https://helion.pl/ksiazki/c-7-0-leksykon-kieszonkowy-joseph-albahari-ben-albahari,ch7lek.htm#format/d)        
+		> Wersja uproszczona  
 
 3. John Sharp. seria **Microsoft C# Step by Step**
 
