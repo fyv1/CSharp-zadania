@@ -57,10 +57,11 @@ Założenia ogólne dotyczące implmenentacji typu `Ulamek`:
 2. Realizacja typu w formie klasy języka C#.
 3. Instancje typu są niezmiennicze (_immutables_).
 4. _Licznik_ i _mianownik_ widziane są przez użytkownika końcowego jako wartości typu `long`.
-5. Typ `Ulamek` reprezentuje koncepcję liczby, zatem jego instancje "współdziałają" z liczbami reprezentowanymi przez inne typy (`int`, ..., `double`). Współdziałanie to obejmuje konwersje (jawne i niejawne), porównywanie (operatory relacyjne) oraz działania arytmetyczne.
-6. **Wszystkie** publiczne składniki klasy są przetestowane (odpowiednie testy jednostkowe).
-7. Klasa oraz jej składniki publiczne są udokumentowane (dokumentacja XML w kodzie).
-8. Dokumentacja API w html.
+5. Domyslną wartością typu jest ułamek o wartości `0`: `licznik == 0` oraz `mianownik = 1`.
+6. Typ `Ulamek` reprezentuje koncepcję liczby, zatem jego instancje "współdziałają" z liczbami reprezentowanymi przez inne typy (`int`, ..., `double`). Współdziałanie to obejmuje konwersje (jawne i niejawne), porównywanie (operatory relacyjne) oraz działania arytmetyczne.
+7. **Wszystkie** publiczne składniki klasy są przetestowane (odpowiednie testy jednostkowe).
+9. Klasa oraz jej składniki publiczne są udokumentowane (dokumentacja XML w kodzie).
+9. Dokumentacja API w html.
 
 ## Etapy realizacji ##
 
