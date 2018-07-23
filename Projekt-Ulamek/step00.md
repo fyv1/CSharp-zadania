@@ -50,6 +50,6 @@
    z interaktywnego środowiska C# (https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/103).
 
 
-[Początek](readme.md) | [Krok 1](step01.md)
+[Początek](Readme.md) | [Krok 1](step01.md)
 
 
