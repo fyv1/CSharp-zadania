@@ -54,34 +54,47 @@ Przy tworzeniu specjalistycznego oprogramowania może okazać się potrzebną re
 Założenia ogólne dotyczące implmenentacji typu `Ulamek`:
 
 1. Implementowany typ realizouje matematyczną koncepcję liczby wymiernej (https://en.wikipedia.org/wiki/Rational_number).
+
 2. Realizacja typu w formie klasy języka C#.
+
 3. Instancje typu są niezmiennicze (_immutables_).
+
 4. _Licznik_ i _mianownik_ widziane są przez użytkownika końcowego jako wartości typu `long`.
-5. Domyslną wartością typu jest ułamek o wartości `0`: `licznik == 0` oraz `mianownik = 1`.
+
+5. Domyslną wartością typu jest ułamek o wartości `0`: `licznik == 0` oraz `mianownik == 1`.
+
 6. Typ `Ulamek` reprezentuje koncepcję liczby, zatem jego instancje "współdziałają" z liczbami reprezentowanymi przez inne typy (`int`, ..., `double`). Współdziałanie to obejmuje konwersje (jawne i niejawne), porównywanie (operatory relacyjne) oraz działania arytmetyczne.
+
 7. **Wszystkie** publiczne składniki klasy są przetestowane (odpowiednie testy jednostkowe).
+
 9. Klasa oraz jej składniki publiczne są udokumentowane (dokumentacja XML w kodzie).
-9. Dokumentacja API w html.
+
+10. Dokumentacja API w html.
+
+
 
 ## Etapy realizacji ##
 
 * [Krok 0. Konfiguracja środowiska projektu](step00.md)
     > utworzysz _solution_ oraz 3 projekty: typu _Class Library_, _Console application_ oraz _Unit test_.
 
-* Krok 1. Podstawowa funkcjonalność
+* [Krok 1. Podstawowa funkcjonalność](step01.md)
     > zdefiniujesz wewnętrzną reprezentację danych ułamka (pola) zapewniając niezmienniczość tworzonych obiektów, zdefiniujesz konstruktory oraz tekstową reprezentację ułamka, utworzysz testy jednostkowe
 
-* Krok 2. Równość ułamków
+* [Krok 2. Równość ułamków](step02.md)
     > określisz, kiedy dwa ułamki są sobie równe (implementacja `IEquatable`, `IEquatable<Ulamek>`, generowanie hashkodu, przeciążenie operatorów `==` oraz `!=`), utworzysz testy jednostkowe
 
-* Krok 3. Operacje arytmetyczne
+* [Krok 3. Operacje arytmetyczne](step03.md)
     > zdefiniujesz podstawowe działania arytmetyczne na ułamkach (przeciązenie operatorów arytmetycznych `+`, `*`, ... ) oraz wybrane funkcje użytkowe (`min`, `max`, ...) wzorując się na wbudowanych typach liczbowych, utworzysz testy jednostkowe
 
-* Krok 4. Porównywanie ułamków
+* [Krok 4. Porównywanie ułamków](step04.md)
     > zdefiniujesz podstawowe operatory relacyjne (implementacja `IComparable<Ulamek>`, przeciążenie operatorów `<`, `>`), utworzysz testy jednostkowe
 
-* Krok 5. Konwersje
+* [Krok 5. Konwersje](step05.md)
     > zdefiniujesz mechanizmyy konwersji (jawnej, niejawnej) z i do ułamka, utworzysz testy jednostkowe
+
+* [Krok 6. Rozszerzenia klasy `Ulamek`](step06.md)
+    > pznasz mechanizmy rozszerzania funkcjonalności wcześniej zaprojektowanej klasy
 
 * Krok 7. Refaktoryzacja i dokumentacja kodu
     > uporządkujesz kod czyniąc go bardziej czytelnym i łatwiejszym do zarządzania, wprowadzisz optymalizacje, opracujesz/uzupełnisz dokumentację, wygenerujesz dokumentację w html

@@ -7,13 +7,21 @@ Wykonuj zadania w podanej kolejnoœci.
 ### Zadania do wykonania - czêœæ 1
 
 1. W projekcie typu _Class Library_ utwórz publiczn¹ klasê `Ulamek` (w pliku `Ulamek.cs`).
+
 2. Zdefiniuj pola klasy (`licznik`, `mianownik`) jako wartoœci typu `long`.
+
 3. Zapewnij odpowiedni poziom hermetyzacji (pola s¹ `private`, wartoœci licznika i mianownika s¹ udostêpniane publicznie za pomoc¹ gettersów `Licznik` oraz `Mianownik`).
+
 4. Pamiêtaj, aby zapewniæ niezmienniczoœæ obiektów typu `Ulamek`.
-5. Dostarcz konstruktory: 
+
+5. Dostarcz konstruktory:
+ 
     a. domyœlny - wartoœæ domyslna u³amka to `0`, a dok³adnie `0/1`,
+
     b. dwuargumentowy - inicjuj¹cy u³amek o dowlnych wartoœciach licznika i mianownika,
+
         > UWAGA: obiekt typu `Ulamek` o zerowym mianowniku nie istnieje - nie mozesz dopuœciæ do jego utworzenia.
+
     c. jednoargumentowy - konwertuj¹cy liczbê ca³kowit¹ do postaci u³amka (np. `2` na `2/1`).
 
     Opracuj testy jednostkowe weryfikuj¹ce poprawnoœæ dzia³ania konstruktorów oraz _gettersów_.
@@ -24,18 +32,18 @@ Wykonuj zadania w podanej kolejnoœci.
 
     na przyk³ad `-2/3` lub `-7/2`, ale nie `2/-3` oraz nie `1 1/2`. 
 
-    Opracuj odpowiednie prze³adowanie metody `ToString()`.
+    Opracuj odpowiednie przeci¹¿enie metody `ToString()`.
     
     Opracuj testy jednostkowe weryfikuj¹ce poprawnoœæ reprezentacji tekstowej u³amka.
 
-7. Zapewnij, aby u³amek zapamiêtany by³ w postaci nieskracalnej (licznik i mianownik sa wzglêdnie pierwsze). Opracuj testy jednostkowe weryfikuj¹ce tê funkcjonalnoœæ.
+7. Zapewnij, aby u³amek zapamiêtany by³ w postaci nieskracalnej (licznik i mianownik s¹ wzglêdnie pierwsze). Opracuj testy jednostkowe weryfikuj¹ce tê funkcjonalnoœæ.
 
 
 #### Podpowiedzi - czêœæ 1
 
 1. _Niezmienniczoœæ_ obiektów zapewnisz s³owem kluczowym [readonly](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) (po to zreszt¹ zosta³o wprowadzone do jêzyka). Jesli jednak ustanowi ono zbyt du¿e restrykcje, bêdziesz musia³ zadbaæ o nie wykonywanie ¿adnych zmian w zainicjowanych polach klasy i udostêpniaæ je jedynie do odczytu.
 
-2. Implementacja konstruktorów - mo¿esz utworzyæ trzy prze³adowane konstruktory:
+2. Implementacja konstruktorów - mo¿esz utworzyæ trzy przeci¹¿one konstruktory:
 
     ````csharp
     Ulamek() { ... }
@@ -50,6 +58,7 @@ Wykonuj zadania w podanej kolejnoœci.
 
     * albo zaimplementujesz go samodzielnie, np na podstawie informacji z [Wikibooks](https://pl.wikibooks.org/wiki/Kody_%C5%BAr%C3%B3d%C5%82owe/Algorytm_Euklidesa#C/C++,_C#,_Java)
         > UWAGA: przed u¿yciem, sprawdŸ poprawnoœæ dzia³ania tego algorytmu dla rozwi¹zania Twojego problemu -> jak zachowuje siê dla liczb o ró¿nych znakach.
+
     * albo skorzystasz z tego, dostarczonego w klasie [`System.Numerics.BigInteger`](https://msdn.microsoft.com/en-us/library/system.numerics.biginteger.greatestcommondivisor(v=vs.110).aspx).
 
     Proces upraszczania nale¿y umieœciæ w konstruktorach po to, by zapamiêtany u³amek by³ ju¿ nieskracalny.
@@ -113,7 +122,7 @@ Funkcjonalnoœci z tej czêœci mog¹ byæ zrealizowane ju¿ teraz, ale w niektórych p
 
 5. Dodaj do typu sta³e: `ZERO` - reprezentuj¹c¹ u³amek `0/1`, `JEDEN` - reprezentuj¹c¹ u³amek `1/1` oraz `POLOWA` - reprezentuj¹c¹ u³amek `1/2`.
 
-6. Zaimplementuj konwersjê U³amka do typu `double` (`ToDouble()`), `float` (`ToSingle()`) oraz decimal (`ToDecimal()`).
+6. Zaimplementuj konwersjê U³amka do typu `double` (`ToDouble()`), `float` (`ToSingle()`) oraz `decimal` (`ToDecimal()`).
 
 7. Zaimplementuj konstruktor `Ulamek(double)` oraz `Ulamek(decimal)` tak, aby korespondowa³ z wczeœniej opracowanymi konwersjami do tych typów.
 
